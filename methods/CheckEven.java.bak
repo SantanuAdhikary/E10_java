@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class CheckEven 
+{
+	
+	static Scanner sc = new Scanner(System.in);
+	
+	
+	public static boolean isEven(int num)
+	{
+		if(num % 2 == 0)
+			return true;
+		
+		return false;
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.print("enter one number : ");
+		int num = sc.nextInt();
+		
+	  boolean ans =	isEven(num);
+	  
+	   if(ans)
+		 System.out.println("it is even");
+	   else
+		   System.out.println("it is odd");
+		
+		
+	}
+}

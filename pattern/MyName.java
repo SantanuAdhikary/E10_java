@@ -1,0 +1,112 @@
+class MyName 
+{
+	public static void main(String[] args) throws Exception
+	{
+		
+		int n = 7 ; 
+		
+		for(int i=0 ; i<n;i++)
+		{
+			
+			// S
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(i==0 || i==n-1 || j==0 && i<n/2 || i==n/2 || j==n-1 && i>n/2)
+					System.out.print("s ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// A
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(i==0 || j==0 || j==n-1 || i==n/2)
+					System.out.print("a ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// n
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(j==0 || j==n-1 || i==j)
+					System.out.print("n ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// t
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(i==0 || j==n/2)
+					System.out.print("t ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// A
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(i==0 || j==0 || j==n-1 || i==n/2)
+					System.out.print("a ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// n
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(j==0 || j==n-1 || i==j)
+					System.out.print("n ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			// u
+			
+			System.out.print("  ");
+			
+			for(int j=0 ; j<n;j++)
+			{
+				if(j==0 || j==n-1 || i==n-1)
+					System.out.print("u ");
+				else
+					System.out.print("  ");
+				
+				Thread.sleep(50);
+			}
+			
+			
+			
+			System.out.println();
+		}
+	}
+}

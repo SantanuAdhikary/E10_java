@@ -1,0 +1,60 @@
+import java.util.Scanner;
+class Calculator 
+{
+	
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		
+		int option;
+	  do{	
+		System.out.println("1.Addition");
+		System.out.println("2.Subtraction");
+		System.out.println("3.Multiplication");
+		System.out.println("4.Division");
+		System.out.println("0.Exit");
+		
+		System.out.print("enter any one option : ");
+		option = sc.nextInt();
+		
+		switch(option)
+		{
+			case 1 : System.out.println("\t\t\tWelcome to Addition");
+			         System.out.print("\t\tenter first number : ");
+			         int a = sc.nextInt();
+					 System.out.print("\t\tenter second number : ");
+			         int b = sc.nextInt();
+					 System.out.println("\t\t\taddition is  : "+(a+b));
+					 
+					 
+			         break;
+			case 2 : System.out.println("\t\t\tWelcome to Subtraction");
+					 System.out.print("\t\tenter first number : ");
+			         int c = sc.nextInt();
+					 System.out.print("\t\tenter second number : ");
+			         int d = sc.nextInt();
+					 System.out.println("\t\t\t subtraction is  : "+(c-d));
+			         break;
+			case 3 : System.out.println("\t\t\tWelcome to Multiplication");
+					 System.out.print("\t\tenter first number : ");
+			         int e = sc.nextInt();
+					 System.out.print("\t\tenter second number : ");
+			         int f = sc.nextInt();
+					 System.out.println("\t\t\t multiplication is  : "+(e*f));
+			         break;
+			case 4 : System.out.println("\t\t\tWelcome to Division");
+					 System.out.print("\t\tenter first number : ");
+			         int g = sc.nextInt();
+					 System.out.print("\t\tenter second number : ");
+			         int h = sc.nextInt();
+					 System.out.println("\t\t\t division is  : "+(g/h));
+			         break;
+			case 0 : System.out.println("\t\t\t  bye bye");
+			         break;
+					 
+			default : System.out.println("\t\t\tinvalid input");
+		}
+	  }while(option!=0);
+		
+	}
+}

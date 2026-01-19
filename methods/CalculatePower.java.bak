@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class CalculatePower 
+{
+	
+	static Scanner sc = new Scanner(System.in);
+	public static int power(int base , int pow)
+	{
+		
+		int mul = 1 ; 
+		for(int i=1 ; i<=pow ; i++)
+		{
+			mul = mul * base;
+		}
+		
+		return mul;
+	}
+	
+	public static void main(String[] args) 
+	{
+		
+		System.out.print("enter the base : ");
+		int base = sc.nextInt();
+		
+		System.out.print("enter the power : ");
+		int pow = sc.nextInt();
+		
+		int ans = power(base,power);
+		
+		System.out.println("ans is : "+ans);
+	}
+}

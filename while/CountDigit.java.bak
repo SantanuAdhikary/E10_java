@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+class CountDigit 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		
+		System.out.print("enter one number : ");
+		int n = sc.nextInt();
+		
+		
+	
+	    System.out.println("number is : "+n);
+		
+	}
+}

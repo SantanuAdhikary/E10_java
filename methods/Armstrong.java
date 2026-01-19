@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class Armstrong 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static int countDigit(int n )
+	{
+		int c = 0 ; 
+		
+		while(n>0)
+		{
+			n = n/10 ; 
+			c++;
+		}
+		
+		return c;
+	}
+	
+	public static int power(int base , int pow)
+	{
+		int mul = 1 ; 
+		
+		for(int i=1 ; i<=pow ; i++)
+		{
+			mul = mul * base;
+		}
+		return mul;
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.print("enter one number : ");
+		int num = sc.nextInt();
+		int count = countDigit(num);
+		
+		int originalNum = num;
+		
+		//System.out.println(count);
+		
+		int sum = 0 ;
+		while(num > 0 )
+		{
+			 int ld = num % 10 ; 
+			 sum = sum + power( ld, count);
+			 num = num/10;
+		}
+		
+		System.out.println("sum is : "+sum);
+		
+		if(sum == originalNum)
+			System.out.println("it is armstrong number");
+		else
+			System.out.println("it is not");
+	}
+}

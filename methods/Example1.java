@@ -1,0 +1,26 @@
+class  Example1
+{
+	
+	public static float add(int a , int b )
+	{
+		int sum = a + b ; 
+		
+		return sum;
+	}
+	
+	public static double sub(double a , double b )
+	{
+		
+		return a - b;
+	}
+	
+	public static void main(String[] args) 
+	{
+	   double ans =	add(400,200);
+	   
+	  
+	  System.out.println("ans is : "+ans);
+	  
+	   System.out.println(sub(300,50.9));
+	}
+}

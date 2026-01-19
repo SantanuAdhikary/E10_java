@@ -1,0 +1,32 @@
+// any number if it contains 0 that is called duck number
+
+import java.util.Scanner;
+class DuckNumber 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("enter one number : ");
+		int n = sc.nextInt();
+		
+		boolean flag = false;
+		
+		while(n > 0)
+		{
+			int lastdigit = n % 10 ; 
+			
+
+			if(lastdigit == 0 )
+			{
+				flag = true;
+				break;
+			}
+			n = n / 10; 
+		}
+		
+		if(flag == true)
+			System.out.println("duck number");
+		else
+			System.out.println("not duck number");
+	}
+}
