@@ -1,0 +1,36 @@
+class Hello 
+{
+	public static void main(String args[]) 
+	{
+		
+		int subjects[] = {30,40,90,100,40,45};
+		
+		//System.out.println(subjects[5]);
+		
+		int n = subjects.length;
+		
+		System.out.println("lenght of the array is : "+n);
+		
+		
+		for(int i=1 ; i<n ; i++)
+		{
+			System.out.println(subjects[i]);
+		}
+		
+		
+		String names[] = new String[5];
+		
+		names[0] = "vijay";
+		names[1] = "karthi";
+		names[2] = "rajnikanth";
+		names[3] = "siva karthikeyan";
+		names[4] = "Ajith";
+		names[5] = "samantha";
+		
+		for(int i=0 ; i<names.length;i++)
+		{
+			System.out.println(names[i]);
+		}
+		
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.*;
+class  Colors
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int n =  5 ; 
+		
+		String colors[] = new String[n];
+		
+		System.out.println("enter the colors : ");
+		for(int i=0 ; i<n; i++)
+		{
+			colors[i] = sc.next();
+		}
+		
+		System.out.println(colors);
+	}
+}
